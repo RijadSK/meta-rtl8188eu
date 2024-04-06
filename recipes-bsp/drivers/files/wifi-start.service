@@ -1,0 +1,18 @@
+[Unit]
+Description=Wifi Start Service
+BindsTo=sys-subsystem-net-devices-wlan0.device
+After=network.target
+After=sys-subsystem-net-devices-wlan0.device
+
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+
+ExecStartPre=ifconfig wlan0 up
+ExecStart=wpa_supplicant -B -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+
+
+[Install]
+WantedBy=multi-user.target
+

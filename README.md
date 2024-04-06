@@ -1,24 +1,3 @@
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -28,9 +7,6 @@ In case of Wifi USB stick, I have tested it with **TL-WN725N 150Mbit/s-WLAN-Nano
 
 In case of embedded board, I have used **phyBoard Mira** for testing, but it should work for other embedded boards with USB port without big changes.
 Link with description of phyBoard Mira is here: https://www.phytec.de/produkte/single-board-computer/phyboard-mira-imx6/
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
@@ -52,9 +28,6 @@ Software prerequisites for integrating this Yocto meta layer:
 * **Virtual machine** for development with phyBoard Mira as from this link: https://download.phytec.de/Products/i.MX6/SO-547v5_PD22.1.0/Virtual_Machine/
 
   It contains everything we need for quick start
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Integration
 
@@ -238,7 +211,6 @@ At the end, you should find **oftree**, **zImage** and **phytec-headless-image-p
   I have used PuTTY for serial communication with my board.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
@@ -258,12 +230,9 @@ wpa_supplicant -B -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant-wlan0.c
 ``` wget -qO - http://example.com ```
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 ## License
 
   Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
